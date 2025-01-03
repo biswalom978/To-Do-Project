@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+}
+.contaner {
+    height: 100vh;
+    width: 100%;
+    padding: auto; 
+    background: linear-gradient( 135deg, rgb(12, 15, 95), rgb(73, 0, 73));
+}
+
+.todo {
+    height: auto;
+    width: 450px;
+    background-color: rgb(154, 188, 255);
+    position: relative;
+    top: 15%;
+    left: 34%;
+    border-radius: 10px;
+    border: orange solid 2px;
+    padding-bottom: 20px;
+}
+
+.head h1 img { 
+    height: 30px;
+    width: 28px;
+    padding-left: 8px;
+    position: relative;
+    top: 10px;
+}
+
+.head {
+    padding: 10px 0px 0px 10px;
+}
+
+.head h1 {
+    font-size: 40px;
+    margin: 0px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: rgb(255, 215, 207);
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.bar input {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 255, 0.138);
+    color: rgb(255, 226, 210);
+    border: none;
+    outline: none;
+    padding: 7px;
+    margin-left: 15px;
+    width: 75%;
+    font-size: 20px;
+    padding-left: 10px;
+} 
+
+.bar input::placeholder {
+    color: rgb(255, 226, 210);
+} 
+
+.bar button {
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    padding: 8px 10px;
+} 
+
+#list {
+    margin-left: 0px;
+    margin-top: 10px;
+} 
+
+#list li {
+    list-style-type: none;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: rgb(255, 226, 210);
+    margin-right: 30px;
+}
+
+#list li button{
+    color: rgb(255, 123, 52);
+    border-radius: 50%;
+    border: none; 
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+}
+
+#list li::before {
+    content: "";
+    background-image: url('images//unchecked.png');
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-size: cover;
+    background-position: center;
+    text-decoration: line-through;
+    position: relative;
+    top: 5px;
+  }
+
+#list li.selected::before {
+  content: "";
+  background-image: url('images//checked.png');
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 5px;
+}
+
+#list li.selected {
+    text-decoration: line-through;   
+    text-decoration-color: orange;
+}
